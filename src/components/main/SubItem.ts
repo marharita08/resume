@@ -6,7 +6,7 @@ export interface Link {
 }
 
 export interface SubItem {
-  heading: string,
+  heading?: string,
   description?: string,
   sources?: Link[],
   terms?: string,

@@ -1,16 +1,27 @@
 import React from "react";
+import {MainSubItem} from "./MainSubItem";
+import {SubItem} from "./SubItem";
 
 interface Props {
   heading: string,
-  children: React.ReactNode
+  subItems: SubItem[]
 }
 
-export const MainItem: React.FC<Props> = ({heading, children}) => {
+export const MainItem: React.FC<Props> = ({heading, subItems}) => {
   return (
     <div className={"main-item"}>
       <h3>{heading}</h3>
       <hr/>
-      {children}
+      {
+        subItems.map((subItem, index) =>
+          <>
+            <MainSubItem subItem={subItem}/>
+            {
+              index < subItems.length - 1 && <hr/>
+            }
+          </>
+        )
+      }
     </div>
   )
 }
