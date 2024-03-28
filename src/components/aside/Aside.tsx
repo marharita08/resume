@@ -1,6 +1,7 @@
 import React from "react";
 import {ContactInfo} from "./contact-info/ContactInfo";
 import {SocialNetworks} from "./social-networks/SocialNetworks";
+import {Skills} from "./skills/Skills";
 
 export const Aside = () => {
   return (
@@ -10,6 +11,7 @@ export const Aside = () => {
       <img src="/avatar.jpg" alt="avatar" className="avatar"/>
       <ContactInfo/>
       <SocialNetworks/>
+      <Skills/>
     </aside>
   )
 }
