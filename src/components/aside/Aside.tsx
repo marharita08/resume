@@ -2,6 +2,7 @@ import React from "react";
 import {ContactInfo} from "./contact-info/ContactInfo";
 import {SocialNetworks} from "./social-networks/SocialNetworks";
 import {Skills} from "./skills/Skills";
+import {Languages} from "./langauges/Languages";
 
 export const Aside = () => {
   return (
@@ -12,6 +13,7 @@ export const Aside = () => {
       <ContactInfo/>
       <SocialNetworks/>
       <Skills/>
+      <Languages/>
     </aside>
   )
 }
