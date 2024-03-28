@@ -1,5 +1,5 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 import {Aside} from "./components/aside/Aside";
 
 function App() {
