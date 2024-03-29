@@ -20,7 +20,7 @@ export const MainSubItem: React.FC<Props> = ({subItem}) => {
               sources.map((source, index) =>
                 <>
                   <a href={source.link} target="_blank">{source.name}</a>
-                  {index < sources.length - 1 && ","}
+                  {index < sources.length - 1 && ", "}
                 </>
               )
             }
