@@ -1,38 +1,191 @@
-.App {
-  text-align: center;
+body {
+  background-color: #1B2223;
+  color: #F4FEFD;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 20px;
+  align-items: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.aside-container {
+  background-color: #3A4F50;
+  padding: 5px;
+  width: 300px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.avatar {
+  width: 300px;
+}
+.main-container .main-item {
+  padding: 10px;
+  border: solid 1px #3A4F50;
+}
+hr {
+  border-color: #3A4F50;
+}
+main a {
+  color: #F4FEFD;
+}
+.contact-info-item a:hover, a:hover {
+  color: #5CD2C6;
+}
+.social-networks-container .bar {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #171618, #1b1a1d);
+  box-shadow: 5px 5px 10px #121113, -5px -5px 10px #211f23;
+}
+.social-networks-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.button-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
+}
+.button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.button .dot {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transform: translateY(calc(-50px - 50%));
+  z-index: 1;
+  transition: 0.5s ease-in-out;
+  background-color: #0EF6CC;
+  box-shadow: 0 0 10px #0EF6CC, 0 0 30px #0EF6CC;
+}
+.button .light {
+  position: absolute;
+  bottom: 0;
+  width: 100px;
+  height: 130px;
+  clip-path: polygon(49% 0, 51% 0, 100% 100%, 0 100%);
+  pointer-events: none;
+  transition: .5s ease-in-out;
+  transition-delay: .1s;
+}
+.button button {
+  cursor: pointer;
+  border-radius: 10px;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(145deg, #171618, #1b1a1d);
+  box-shadow: 5px 5px 10px #121113, -5px -5px 10px #211f23;
+  border: none;
+}
+.button button i {
+  font-size: 28px;
+}
+.button button span {
+  font-size: 12px;
+  font-weight: 600;
+}
+.button .light {
+  background: linear-gradient(180deg, #0EF6CC, #f0515450, #f0515400);
+}
+
+
+.button:hover button a {
+  color: #0EF6CC;
+}
+aside button a {
+  text-decoration: none;
+  color: #0e0e0e;
+  transition: .5s ease-in-out;
+  transition-delay: 0.25s;
+}
+.button button a {
+  text-decoration: none;
+  transition: .5s ease-in-out;
+  transition-delay: 0.25s;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 5px;
+  color: #0EF6CC;
 }
-
-.App-link {
-  color: #61dafb;
+.icon-container {
+  margin-right: 5px;
+  width: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.contact-info-item, .skills-item, .icon-text-container {
+  display: flex;
+}
+.contact-info-item a {
+  color: #F4FEFD;
+}
+.contact-info, .skills-col {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.contact-info {
+  margin-bottom: 20px;
+}
+.skills {
+  display: flex;
+  gap: 20px;
+}
+.icons {
+  display: flex;
+}
+.main-item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+a {
+  text-decoration: none;
+}
+@media screen and (min-width: 600px) {
+  .resume-container {
+    flex-direction: row;
+    padding: 0 10px;
+    align-items: normal;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media screen and (min-width: 768px) {
+  .button .light {
+    opacity: 0;
+  }
+  .button:hover .light {
+    opacity: 1;
+  }
+  .button .dot {
+    background: #0e0e0e;
+    box-shadow: none;
+  }
+  .button:hover .dot {
+    background-color: #0EF6CC;
+    box-shadow: 0 0 10px #0EF6CC, 0 0 30px #0EF6CC;
+  }
+  .button button a {
+    color: #0e0e0e;
+  }
+  .button:hover button a {
+    color: #0EF6CC;
+  }
+}
+@media screen and (min-width: 992px) {
+  .resume-container {
+    padding: 0 10%;
   }
 }
