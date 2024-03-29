@@ -22,7 +22,7 @@ export const Skills = () => {
       content: "React"
     },
     {
-      icon: "ex",
+      icon: <i className="fa-brands fa-node-js"></i>,
       content: "Express"
     },
     {

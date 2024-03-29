@@ -20,7 +20,7 @@ export const Certificates = () => {
       terms: "16/11/2021 – 23/02/2022; 01/07/2022 – 10/08/2022",
       icons: [
         <i className="fa-brands fa-react"></i>,
-        "ex",
+        <i className="fa-brands fa-node-js"></i>,
         <i className="fa-brands fa-git-alt"></i>,
         <i className="fa-solid fa-database"></i>
       ],
