@@ -1,5 +1,5 @@
 import React from "react";
-import {Item} from "./Item";
+import {Item} from "./ItemTypes";
 import {SkillsItem} from "./SkillsItem";
 
 interface Props {

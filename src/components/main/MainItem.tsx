@@ -1,6 +1,6 @@
 import React from "react";
 import {MainSubItem} from "./MainSubItem";
-import {SubItem} from "./SubItem";
+import {SubItem} from "./SubItemTypes";
 
 interface Props {
   heading: string,

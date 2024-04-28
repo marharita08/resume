@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Item} from "./Item";
+import {Item} from "./ItemTypes";
 
 export const SocialNetworksItem: React.FC<Item> = ({link, icon, content}) => {
 

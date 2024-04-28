@@ -1,5 +1,5 @@
 import React from "react";
-import {Item} from "./Item";
+import {Item} from "./ItemTypes";
 
 export const ContactInfoItem: React.FC<Item> = ({icon, content}) => {
   return (
