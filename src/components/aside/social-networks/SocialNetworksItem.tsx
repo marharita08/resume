@@ -1,10 +1,20 @@
-import React from "react";
-import {Item} from "./Item";
+import React, { useState } from "react";
+import {Item} from "./ItemTypes";
 
 export const SocialNetworksItem: React.FC<Item> = ({link, icon, content}) => {
 
+  const [isOn, setIsOn] = useState(true);
+
+  const handleChange = () => {
+    setIsOn(!isOn);
+  };
+
   return (
-    <div className="button">
+    <div className={`button ${isOn && "on"}`}>
+      <label className="switch">
+        <input type="checkbox" onChange={handleChange} defaultChecked={isOn}/>
+        <span className="slider round"></span>
+      </label>
       <div className="dot"></div>
       <div className="light"></div>
       <button>

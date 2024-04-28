@@ -1,5 +1,5 @@
 import React from "react";
-import {SubItem} from "./SubItem";
+import {SubItem} from "./SubItemTypes";
 
 interface Props {
   subItem: SubItem
@@ -18,10 +18,10 @@ export const MainSubItem: React.FC<Props> = ({subItem}) => {
           <div>
             {
               sources.map((source, index) =>
-                <>
+                <span key={index}>
                   <a href={source.link} target="_blank">{source.name}</a>
-                  {index < sources.length - 1 && ","}
-                </>
+                  {index < sources.length - 1 && ", "}
+                </span>
               )
             }
           </div>
@@ -39,8 +39,8 @@ export const MainSubItem: React.FC<Props> = ({subItem}) => {
           <div>
             <div className="icons">
               {
-                icons.map(icon =>
-                  <div className="icon-container">{icon}</div>
+                icons.map((icon, index) =>
+                  <div className="icon-container" key={index}>{icon}</div>
                 )
               }
             </div>
@@ -50,8 +50,8 @@ export const MainSubItem: React.FC<Props> = ({subItem}) => {
           links &&
           <div>
             {
-              links.map(link =>
-                <div>
+              links.map((link, index) =>
+                <div key={index}>
                   <a href={link.link} target={"_blank"}>{link.name}</a>
                 </div>
               )
