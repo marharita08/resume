@@ -38,7 +38,7 @@ main a {
 }
 .social-networks-container .bar {
   width: 100%;
-  height: 50px;
+  height: 70px;
   border-radius: 10px;
   background: linear-gradient(145deg, #171618, #1b1a1d);
   box-shadow: 5px 5px 10px #121113, -5px -5px 10px #211f23;
@@ -50,7 +50,7 @@ main a {
 }
 .button-container {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   margin-top: 50px;
 }
 .button {
@@ -62,7 +62,7 @@ main a {
 }
 .button .switch {
   position: absolute;
-  transform: translateY(calc(-80px - 50%));
+  transform: translateY(calc(-95px - 50%));
 }
 
 .button .dot {
@@ -85,8 +85,8 @@ main a {
 .button .light {
   position: absolute;
   bottom: 0;
-  width: 100px;
-  height: 130px;
+  width: 90px;
+  height: 120px;
   clip-path: polygon(49% 0, 51% 0, 100% 100%, 0 100%);
   pointer-events: none;
   transition: .5s ease-in-out;
@@ -101,8 +101,8 @@ main a {
 .button button {
   cursor: pointer;
   border-radius: 10px;
-  width: 80px;
-  height: 80px;
+  width: 68px;
+  height: 68px;
   background: linear-gradient(145deg, #171618, #1b1a1d);
   box-shadow: 5px 5px 10px #121113, -5px -5px 10px #211f23;
   border: none;
@@ -211,11 +211,11 @@ a {
 }
 
 input:checked + .slider {
-  background-color: #F4FEFD;
+  background-color: #5CD2C6;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #F4FEFD;
+  box-shadow: 0 0 1px #5CD2C6;
 }
 
 input:checked + .slider:before {

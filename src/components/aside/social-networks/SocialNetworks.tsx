@@ -19,6 +19,11 @@ export const SocialNetworks = () => {
       link: "https://t.me/Marharyta_Rozghon",
       icon: <i className="fa-brands fa-telegram"></i>,
       content: "Telegram"
+    },
+    {
+      link: "https://bitbucket.org/marharyta08",
+      icon: <i className="fa-brands fa-bitbucket"></i>,
+      content: "Bitbucket"
     }
   ]
 

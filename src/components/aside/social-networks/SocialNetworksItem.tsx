@@ -3,7 +3,7 @@ import {Item} from "./Item";
 
 export const SocialNetworksItem: React.FC<Item> = ({link, icon, content}) => {
 
-  const [isOn, setIsOn] = useState(false);
+  const [isOn, setIsOn] = useState(true);
 
   const handleChange = () => {
     setIsOn(!isOn);
@@ -12,7 +12,7 @@ export const SocialNetworksItem: React.FC<Item> = ({link, icon, content}) => {
   return (
     <div className={`button ${isOn && "on"}`}>
       <label className="switch">
-        <input type="checkbox" onChange={handleChange}/>
+        <input type="checkbox" onChange={handleChange} defaultChecked={isOn}/>
         <span className="slider round"></span>
       </label>
       <div className="dot"></div>

@@ -14,12 +14,12 @@ export const MainItem: React.FC<Props> = ({heading, subItems}) => {
       <hr/>
       {
         subItems.map((subItem, index) =>
-          <>
+          <div key={index}>
             <MainSubItem subItem={subItem}/>
             {
               index < subItems.length - 1 && <hr/>
             }
-          </>
+          </div>
         )
       }
     </div>
