@@ -4,7 +4,7 @@ import {ToggleSwitch} from "../../switch/ToggleSwitch";
 
 export const SocialNetworksItem: React.FC<Item> = ({link, icon, content}) => {
 
-  const [isOn, setIsOn] = useState(true);
+  const [isOn, setIsOn] = useState(Math.random() > 0.5);
 
   const handleChange = () => {
     setIsOn(!isOn);

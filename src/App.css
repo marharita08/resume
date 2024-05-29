@@ -73,7 +73,7 @@ main a {
 }
 .button .switch {
   position: absolute;
-  transform: translateY(calc(-95px - 50%));
+  transform: translate(-30px, calc(-95px - 50%));
 }
 
 .button .dot {
@@ -189,7 +189,6 @@ a {
   font: 1em/1.5 sans-serif;
 }
 .switch__wrapper {
-  width: 50px;
   background-image: linear-gradient(45deg,hsl(var(--hue),10%,20%), hsl(var(--hue),10%,10%));
   color: var(--fg);
   display: flex;
