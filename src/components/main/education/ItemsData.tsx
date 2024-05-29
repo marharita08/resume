@@ -11,7 +11,7 @@ export const items: SubItem[] = [
   {
     heading: "Master's degree in Computer Sciences (Information Technology of Design)",
     sources,
-    terms: "01/10/2022 – Current"
+    terms: "01/10/2022 – 31/05/2024"
   },
   {
     heading: "Bachelor's degree in Computer Sciences (Informatics)",

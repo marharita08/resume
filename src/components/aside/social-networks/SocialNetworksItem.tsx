@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import {Item} from "./ItemTypes";
+import {ToggleSwitch} from "../../switch/ToggleSwitch";
 
 export const SocialNetworksItem: React.FC<Item> = ({link, icon, content}) => {
 
-  const [isOn, setIsOn] = useState(true);
+  const [isOn, setIsOn] = useState(Math.random() > 0.5);
 
   const handleChange = () => {
     setIsOn(!isOn);
@@ -11,10 +12,7 @@ export const SocialNetworksItem: React.FC<Item> = ({link, icon, content}) => {
 
   return (
     <div className={`button ${isOn && "on"}`}>
-      <label className="switch">
-        <input type="checkbox" onChange={handleChange} defaultChecked={isOn}/>
-        <span className="slider round"></span>
-      </label>
+      <ToggleSwitch onChange={handleChange} defaultChecked={isOn}/>
       <div className="dot"></div>
       <div className="light"></div>
       <button>
