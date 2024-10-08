@@ -9,7 +9,7 @@ export const Aside = () => {
     <aside className="aside-container">
       <h2>Marharyta Rozghon</h2>
       <h3>JavaScript Developer</h3>
-      <img src="avatar.jpg" alt="avatar" className="avatar"/>
+      <img src="/resume/avatar.jpg" alt="avatar" className="avatar"/>
       <ContactInfo/>
       <SocialNetworks/>
       <Skills/>

@@ -14,16 +14,20 @@ export const items: Item[] = [
     content: "JavaScript"
   },
   {
+    icon: "ts",
+    content: "Typescript"
+  },
+  {
     icon: <i className="fa-brands fa-react"></i>,
     content: "React"
   },
   {
-    icon: <i className="fa-brands fa-node-js"></i>,
-    content: "Express"
+    icon: "rd",
+    content: "Redux Toolkit",
   },
   {
-    icon: "ts",
-    content: "Typescript"
+    icon: <i className="fa-brands fa-node-js"></i>,
+    content: "Node.js"
   },
   {
     icon: <i className="fa-brands fa-git-alt"></i>,
