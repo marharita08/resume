@@ -14,20 +14,24 @@ export const items: Item[] = [
     content: "JavaScript"
   },
   {
-    icon: "ts",
-    content: "Typescript"
+    icon: <i className="fa-solid fa-shapes"></i>,
+    content: "TypeScript"
   },
   {
     icon: <i className="fa-brands fa-react"></i>,
     content: "React"
   },
   {
-    icon: "rd",
-    content: "Redux Toolkit",
+    icon: <i className="fa-solid fa-floppy-disk"></i>,
+    content: "Tanstack Query",
+  },
+  {
+    icon: <i className="fa-brands fa-css"></i>,
+    content: "Tailwind CSS"
   },
   {
     icon: <i className="fa-brands fa-node-js"></i>,
-    content: "Node.js"
+    content: "NestJS"
   },
   {
     icon: <i className="fa-brands fa-git-alt"></i>,
@@ -36,5 +40,9 @@ export const items: Item[] = [
   {
     icon: <i className="fa-solid fa-database"></i>,
     content: "PostgreSQL"
+  },
+  {
+    icon: <i className="fa-solid fa-database"></i>,
+    content: "Prisma ORM"
   },
 ];

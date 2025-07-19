@@ -8,7 +8,7 @@ export const Aside = () => {
   return (
     <aside className="aside-container">
       <h2>Marharyta Rozghon</h2>
-      <h3>JavaScript Developer</h3>
+      <h3>Full-Stack Developer</h3>
       <img src="avatar.jpg" alt="avatar" className="avatar"/>
       <ContactInfo/>
       <SocialNetworks/>

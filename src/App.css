@@ -183,6 +183,10 @@ aside button a {
 a {
   text-decoration: none;
 }
+.main-item-terms, .description {
+  font-style: italic;
+}
+
 
 .switch__wrapper,
 .switch__wrapper input {

@@ -1,5 +1,3 @@
-import React from "react";
-
 export interface Link {
   link: string,
   name: string
@@ -10,6 +8,6 @@ export interface SubItem {
   description?: string,
   sources?: Link[],
   terms?: string,
-  icons?: React.ReactNode[],
-  links?: Link[]
+  links?: Link[],
+  stack?: string[],
 }

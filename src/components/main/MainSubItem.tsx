@@ -7,42 +7,47 @@ interface Props {
 
 export const MainSubItem: React.FC<Props> = ({subItem}) => {
 
-  const {heading, icons, description, terms, sources, links} = subItem;
+  const {heading, description, terms, sources, links, stack} = subItem;
 
   return (
     <div>
-      {heading && <h4>{heading}</h4>}
+      {heading && <h3>{heading}</h3>}
       <div className="main-item-content">
         {
           sources &&
-          <div>
-            {
-              sources.map((source, index) =>
-                <span key={index}>
-                  <a href={source.link} target="_blank">{source.name}</a>
-                  {index < sources.length - 1 && ", "}
-                </span>
-              )
-            }
+          <div className="icon-text-container">
+            <div className="icon-container"><i className="fa-solid fa-location-dot"></i></div>
+            <div>
+              {
+                sources.map((source, index) =>
+                  <span key={index}>
+                    <a href={source.link} target="_blank">{source.name}</a>
+                    {index < sources.length - 1 && ", "}
+                  </span>
+                )
+              }
+            </div>
           </div>
         }
         {
           terms &&
           <div className="icon-text-container">
             <div className="icon-container"><i className="fa-regular fa-calendar"></i></div>
-            <span>{terms}</span>
+            <span className="main-item-terms">{terms}</span>
           </div>
         }
-        {description && <div>{description}</div>}
+        {description && <div className="description">{description}</div>}
         {
-          icons &&
-          <div>
-            <div className="icons">
-              {
-                icons.map((icon, index) =>
-                  <div className="icon-container" key={index}>{icon}</div>
-                )
-              }
+          stack &&
+          <div className="icon-text-container">
+            <div className="icon-container"><i className="fa-solid fa-wrench"></i></div>
+            <div>
+              <span>Stack: {" "}</span>
+              <span >
+                {
+                  stack.join(", ")
+                }
+              </span>
             </div>
           </div>
         }
@@ -51,7 +56,8 @@ export const MainSubItem: React.FC<Props> = ({subItem}) => {
           <div>
             {
               links.map((link, index) =>
-                <div key={index}>
+                <div key={index} className="icon-text-container">
+                  <div className="icon-container"><i className="fa-solid fa-link"></i></div>
                   <a href={link.link} target={"_blank"}>{link.name}</a>
                 </div>
               )

@@ -23,13 +23,6 @@ export const items: SubItem[] = [
     heading: "Bachelor's degree in Computer Sciences (Informatics)",
     sources,
     terms: "01/09/2018 – 30/06/2022",
-    icons: [
-      <i className="fa-brands fa-html5"></i>,
-      <i className="fa-brands fa-css3-alt"></i>,
-      <i className="fa-brands fa-js"></i>,
-      <i className="fa-brands fa-git-alt"></i>,
-      <i className="fa-solid fa-database"></i>
-    ],
     links: [
       {
         link: "https://drive.google.com/file/d/10N9RYL0K_2__duFIENx6bEYdYHxs7Pvz/view?usp=sharing",

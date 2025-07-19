@@ -10,7 +10,7 @@ interface Props {
 export const MainItem: React.FC<Props> = ({heading, subItems}) => {
   return (
     <div className={"main-item"}>
-      <h3>{heading}</h3>
+      <h2>{heading}</h2>
       <hr/>
       {
         subItems.map((subItem, index) =>
