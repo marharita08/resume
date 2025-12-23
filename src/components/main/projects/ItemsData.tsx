@@ -17,20 +17,6 @@ export const items: SubItem[] = [
   ]
   },
   {
-    heading: "Weather App",
-    terms: "11/2024 – 01/2025",
-    description: "A weather app that allows you to search for weather information for a specific location.",
-    stack: ["TypeScript", "React", "Redux Toolkit"],
-    links: [{
-      link: "https://github.com/marharita08/weather-app",
-      name: "GitHub link"
-    },
-    {
-      link: "https://marharita08.github.io/weather-app/",
-      name: "App link"
-    }]
-  },
-  {
     heading: "Awesome Store",
     terms: "26/03/2025 - 18/04/2025",
     description: "Awesome Store is a small e-commerce application built with modern full-stack technologies, designed to provide a simple and responsive shopping experience.",
