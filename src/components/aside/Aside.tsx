@@ -23,7 +23,13 @@ export const Aside = () => {
       <ContactInfo />
       <Skills />
       <Languages />
-      {!isPdfPage && <div className="button-container"><button className="button" onClick={downloadPdf}>Download PDF</button></div>}
+      {!isPdfPage && (
+        <div className="button-container">
+          <button className="button" onClick={downloadPdf}>
+            Download PDF
+          </button>
+        </div>
+      )}
     </aside>
   );
 };
