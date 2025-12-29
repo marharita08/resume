@@ -1,14 +1,21 @@
-import React from "react";
 import "./App.css";
-import {Aside} from "./components/aside/Aside";
-import {Main} from "./components/main/Main";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { MainPage } from "./pages/MainPage";
+import { PdfPage } from "./pages/PdfPage";
+
+export const RouteKeys = {
+  MAIN: "/",
+  PDF: "/pdf",
+};
 
 function App() {
   return (
-    <div className="resume-container">
-      <Aside/>
-      <Main/>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path={RouteKeys.MAIN} element={<MainPage />} />
+      <Route path={RouteKeys.PDF} element={<PdfPage />} />
+    </Routes>
+    </BrowserRouter>
   );
 }
 

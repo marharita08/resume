@@ -8,5 +8,5 @@ export const Languages = () => {
       <div>English - B2</div>
       <div>Spoken English - B1</div>
     </>
-  )
-}
+  );
+};

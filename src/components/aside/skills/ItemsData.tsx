@@ -1,25 +1,25 @@
-import {Item} from "./ItemTypes";
+import { Item } from "./ItemTypes";
 
 export const items: Item[] = [
   {
     icon: <i className="fa-brands fa-html5"></i>,
-    content: "HTML"
+    content: "HTML",
   },
   {
     icon: <i className="fa-brands fa-css3-alt"></i>,
-    content: "CSS"
+    content: "CSS",
   },
   {
     icon: <i className="fa-brands fa-js"></i>,
-    content: "JavaScript"
+    content: "JavaScript",
   },
   {
     icon: <i className="fa-solid fa-shapes"></i>,
-    content: "TypeScript"
+    content: "TypeScript",
   },
   {
     icon: <i className="fa-brands fa-react"></i>,
-    content: "React"
+    content: "React",
   },
   {
     icon: <i className="fa-solid fa-floppy-disk"></i>,
@@ -27,22 +27,26 @@ export const items: Item[] = [
   },
   {
     icon: <i className="fa-brands fa-css"></i>,
-    content: "Tailwind CSS"
+    content: "Tailwind CSS",
   },
   {
     icon: <i className="fa-brands fa-node-js"></i>,
-    content: "NestJS"
+    content: "NestJS",
   },
   {
     icon: <i className="fa-brands fa-git-alt"></i>,
-    content: "Git"
+    content: "Git",
   },
   {
     icon: <i className="fa-solid fa-database"></i>,
-    content: "PostgreSQL"
+    content: "PostgreSQL",
   },
   {
     icon: <i className="fa-solid fa-database"></i>,
-    content: "Prisma ORM"
+    content: "Prisma ORM",
+  },
+  {
+    icon: <i className="fa-solid fa-database"></i>,
+    content: "Typeorm",
   },
 ];

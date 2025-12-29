@@ -1,6 +1,9 @@
-import React from "react";
-
 export interface Item {
-  icon: React.ReactNode,
-  content: string | React.ReactNode
+  icon: {
+    classNames: string;
+  };
+  link: {
+    href: string;
+    text: string;
+  };
 }

@@ -7,10 +7,20 @@ export const items: SubItem[] = [
     sources: [
       {
         link: "https://cgsteam.io",
-        name: "CGS-team"
-      }
+        name: "CGS-team",
+      },
     ],
-    stack: ["TypeScript", "React", "NestJS", "PostgreSQL", "Tanstack Query", "Tailwind CSS", "Prisma ORM", "React Hook Form"],
+    stack: [
+      "TypeScript",
+      "React",
+      "NestJS",
+      "PostgreSQL",
+      "Tanstack Query",
+      "Tailwind CSS",
+      "Prisma ORM",
+      "Typeorm",
+      "React Hook Form",
+    ],
   },
   {
     heading: "Frontend Developer",
@@ -18,15 +28,15 @@ export const items: SubItem[] = [
     sources: [
       {
         link: "https://www.winwin.travel",
-        name: "WinWin Travel"
-      }
+        name: "WinWin Travel",
+      },
     ],
     stack: ["TypeScript", "React", "Tanstack Query", "Tailwind CSS", "Zustand"],
     links: [
       {
         link: "https://demo.winwin.travel",
-        name: "App link"
-      }
-    ]
+        name: "App link",
+      },
+    ],
   },
 ];
