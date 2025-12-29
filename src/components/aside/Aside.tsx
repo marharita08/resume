@@ -9,7 +9,7 @@ const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 
 export const Aside = () => {
   const location = useLocation();
-  const isPdfPage = location.pathname === RouteKeys.PDF;
+  const isPdfPage = location.pathname.includes(RouteKeys.PDF);
 
   const downloadPdf = () => {
     window.open(`${BACKEND_URL}/cv.pdf`);
