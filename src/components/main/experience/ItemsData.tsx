@@ -3,7 +3,7 @@ import { SubItem } from "../SubItemTypes";
 export const items: SubItem[] = [
   {
     heading: "Trainee Full-Stack Developer",
-    terms: "23/04/2025 - Present",
+    terms: "23/04/2025 - 06/01/2026",
     sources: [
       {
         link: "https://cgsteam.io",

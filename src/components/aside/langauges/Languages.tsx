@@ -6,7 +6,6 @@ export const Languages = () => {
       <h3>Languages</h3>
       <div>Ukrainian - native</div>
       <div>English - B2</div>
-      <div>Spoken English - B1</div>
     </>
   );
 };
