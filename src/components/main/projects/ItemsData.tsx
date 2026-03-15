@@ -14,7 +14,7 @@ export const items: SubItem[] = [
       "PostgreSQL",
       "Redis",
       "Gemini API",
-      "Google Cloud Storage"
+      "Google Cloud Storage",
     ],
     links: [
       {

@@ -31,7 +31,14 @@ export const items: SubItem[] = [
         name: "WinWin Travel",
       },
     ],
-    stack: ["TypeScript", "React", "Tanstack Query", "Tailwind CSS", "Zustand", "Storybook"],
+    stack: [
+      "TypeScript",
+      "React",
+      "Tanstack Query",
+      "Tailwind CSS",
+      "Zustand",
+      "Storybook",
+    ],
     links: [
       {
         link: "https://demo.winwin.travel",
