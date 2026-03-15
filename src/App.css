@@ -23,7 +23,7 @@ body {
 .aside-container {
   background-color: #3a4f50;
   padding: 5px;
-  width: 300px;
+  width: 350px;
 }
 .main-container {
   display: flex;
@@ -31,8 +31,12 @@ body {
   gap: 10px;
   width: 100%;
 }
+.avatar-container {
+  display: flex;
+  justify-content: center;
+}
 .avatar {
-  width: 300px;
+  width: 150px;
 }
 .main-container .main-item {
   padding: 10px;
@@ -40,6 +44,9 @@ body {
 }
 hr {
   border-color: #3a4f50;
+}
+a {
+  text-decoration: none;
 }
 main a {
   color: #f4fefd;

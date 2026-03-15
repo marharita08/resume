@@ -2,8 +2,8 @@ import { SubItem } from "../SubItemTypes";
 
 export const items: SubItem[] = [
   {
-    heading: "Trainee Full-Stack Developer",
-    terms: "23/04/2025 - 06/01/2026",
+    heading: "Full-Stack Developer",
+    terms: "04/2025 - 01/2026",
     sources: [
       {
         link: "https://cgsteam.io",
@@ -24,14 +24,14 @@ export const items: SubItem[] = [
   },
   {
     heading: "Frontend Developer",
-    terms: "11/02/2025 - 26/04/2025",
+    terms: "02/2025 - 04/2025",
     sources: [
       {
         link: "https://www.winwin.travel",
         name: "WinWin Travel",
       },
     ],
-    stack: ["TypeScript", "React", "Tanstack Query", "Tailwind CSS", "Zustand"],
+    stack: ["TypeScript", "React", "Tanstack Query", "Tailwind CSS", "Zustand", "Storybook"],
     links: [
       {
         link: "https://demo.winwin.travel",
